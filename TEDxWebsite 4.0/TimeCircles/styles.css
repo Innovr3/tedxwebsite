@@ -1,0 +1,83 @@
+@font-face{
+	font-family:"Helvetica Neue";
+	src:url("HelveticaNeue.ttf");
+}
+
+@font-face {
+    font-family: "Agency FB";
+    src: url("agency_fb.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Bank Gothic";
+    src: url("bank_gothic.ttf") format("truetype");
+}
+
+
+html, body {
+    color: white;
+    background-color: #2e2e2e;
+    margin: 0;
+    
+    overflow: scroll;
+}
+
+.image {
+    content: url(images/Main%20%5BWhite%20Text%5D.png);
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.content h1 {
+    text-align: center;
+    font-family: "Helvetica Neue";
+    font-weight: 100;
+}
+
+.social {
+    font-size: 30px;
+    text-align: center;
+}
+
+.social-tab {
+    border-radius: 10px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.social-tab a, .social-tab span {
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	tranform: translate(-50%, -50%);
+    color: white;
+}
+
+.icon-tw {
+    background-color: rgb(32, 141, 239);
+}
+
+
+.icon-fb {
+    background-color: rgb(58, 81, 142);
+}
+
+
+.icon-li {
+    background-color: rgb(39, 81, 135);
+}
+
+
+.row {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 736px) {
+    .content {
+        margin-top: 40px;
+    }    
+}

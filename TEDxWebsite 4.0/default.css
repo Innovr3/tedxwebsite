@@ -1,0 +1,1233 @@
+body {
+    margin: 0;
+    padding: 0px;
+    background: rgb(178, 27, 25);
+    font-family: 'Questrial', sans-serif;
+    font-size: 12pt;
+    color: white;
+	}
+	
+
+#event {
+    margin: 30px;
+    background-color: white;
+    color: grey;
+}
+
+#event h1 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+#event img {
+    width: 100%;
+    /* padding: 20px */;
+}
+	
+#event_link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Questrial', sans-serif;
+}
+	
+a:hover {
+    text-decoration: none;
+	}
+
+h1 {
+    font-family: "Bank Gothic";
+    text-align: center;
+    margin: auto;
+}
+
+
+/*********************************************************************************/
+/* Font Faces                                                                        */
+/*********************************************************************************/
+
+@font-face {
+    font-family: "Bank Gothic";
+    src: url("fonts/bank_gothic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Agency FB";
+    src: url("fonts/agency_fb.ttf") format("truetype");
+}
+	
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header-wrapper {
+    background: rgb(244, 244, 244);
+}
+
+header {
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#header-wrapper #logo-main-small {
+    width: auto;
+    height: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5em 1em;
+    z-index: 999;
+}
+
+nav#tabs {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+nav#tabs a{
+    text-decoration: none;
+    color: rgb(178, 27, 25);
+    font-size: 1.5em;
+    font-family: "Bank Gothic";
+    padding: 0.6em 0.6em 0em 0.6em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+         -o-transition: all 0.3s;
+            transition: all 0.3s;
+    
+} 
+
+nav#tabs a:hover, nav#tabs a.active {
+    color: rgb(178, 27, 25);   
+    border-bottom: 4px solid rgb(178, 27, 25);
+}
+
+header #tabs-menu, header.smaller nav#tabs-menu {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+header.smaller  {
+    background: rgba(244, 244, 244, 1);
+    position: fixed;
+    z-index: 10;
+    border-bottom: 4px solid rgb(100, 100, 100);
+    width: 100%;
+    height: 50px;
+} 
+
+header.smaller nav#tabs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+header.smaller nav#tabs a{
+    position: relative;
+    font-size: 20px;
+    color: dimgrey;
+    background-color: none;
+    border: none;
+    border-radius: none;
+}
+
+header.smaller nav#tabs a:hover {
+    color: rgb(178, 27, 25);
+    border-bottom: 3px solid rgb(178, 27, 25);
+}
+
+header.smaller nav#tabs a.active {
+    color: rgb(178, 27, 25);
+    border-bottom: 3px solid rgb(178, 27, 25);
+}
+
+
+header.smaller #logo-main {
+    -webkit-opacity: 0;
+       -moz-opacity: 0;
+            opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo
+{
+    padding: 5em 0em 4em 0em;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+         -o-transition: all 0.3s;
+            transition: all 0.3s;
+}
+
+#logo-main {
+    width: 60%;
+    height: auto;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+	
+	
+
+/*********************************************************************************/
+/* Teaser Video                                                                      */
+/*********************************************************************************/
+
+
+#teaser {
+    position: relative;
+    top: 1rem;
+    text-align: center;
+	}
+
+
+/*********************************************************************************/
+/* Wrapper                                                                       */
+/*********************************************************************************/
+
+.wrapper {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    padding: 0em 0em 0em 0em;
+    background: rgb(178, 27, 25);
+}
+.wrapper h1 {
+    padding: 2rem 0;
+    font-size: 3rem;
+}
+
+iframe {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    height: 500px;
+}
+
+/*********************************************************************************/
+/* Facebook Feed                                                                 */
+/*********************************************************************************/
+
+#fb-feed {
+    text-align: center;
+    margin: 40px 0px;
+    width: 100%;
+    overflow: hidden;
+    border: none;
+}
+
+
+
+/*********************************************************************************/
+/* Speaker Bios                                                                       */
+/*********************************************************************************/
+
+
+
+#bios {
+    padding: 10px;
+
+}
+
+.speaker #text {
+    margin-left: 20px;
+    padding: 10px;
+    display: inline-block;
+    top: 50%;
+    transform: translate(0%, -50%);
+    
+    background-color: white;
+    color: grey;
+    width: 70%;
+    border-radius: 20px;
+}
+
+
+.speaker #text p {
+    font-size: 15px;
+}
+
+.speaker img {
+
+    width: 250px;
+    height: auto;
+}
+
+
+
+
+/*********************************************************************************/
+/* Sponsors                                                                      */
+/*********************************************************************************/
+
+
+.sponsors {
+    float: none;
+    text-align: center;
+}
+
+.sponsors #text {
+    display: block;
+    position: relative;
+    margin-left: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: white;
+    color: grey;
+    border-radius: 20px;
+    
+}
+
+
+.sponsors #text p {
+    font-size: 25px;
+}
+
+.sponsors img {
+    width: 40%;
+    height: auto;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+img#special {
+    height: 200px;
+    width: auto;
+}
+
+
+#partners h2 {
+    font-size: 40px;
+
+}
+
+#partners h1 {
+    font-size: 75px;
+}
+
+
+
+
+
+/*********************************************************************************/
+/* Images                                                                       */
+/*********************************************************************************/
+
+.image-container {
+    margin: auto;
+    text-align: center;
+    
+}
+
+.image-text-container h1 {
+    padding-bottom: 0;
+}
+
+.image-text-container p {
+    padding-top: 0;
+}
+
+.cancel-container {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.image-text-container {
+    opacity: 0;
+    display: none;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    z-index: 12;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    border-radius: 2rem;
+    box-shadow: 10px;
+}
+
+img.team {
+    opacity: 0;
+    width: 20%;
+    height: auto;
+    display: inline-block;
+}
+
+.guy {
+    display: none;
+}
+
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/********************************************************************************
+
+#sidebar
+{
+    top: 0px;
+    right: 0px;
+    width: 25%;
+    height: 100%;
+
+}
+#sidebar-content {
+    padding: 15px;
+}
+
+#nostyle-text {
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#sidebar-content-box {
+    background-color: white;
+    color: rgb(80, 80, 80);
+    padding: 0px 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+#sidebar-content-box h3 {
+    padding-top: 10px;
+    font-size: 20px;
+    color: darkslategray;
+    text-align: center;
+    
+}
+down
+#sidebar-content-box p {
+    padding-bottom: 10px;
+    
+}
+
+*/
+
+/*********************************************************************************/
+/* Countdown                                                                       */
+/*********************************************************************************/
+
+
+.countdown-box {
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(115, 18, 17);
+    text-align: center;
+    
+}
+
+.countdown-box td {
+    position: relative;
+    padding: 20px 2px;
+    width: 20%;
+    height: auto;
+    background: rgb(88, 16, 14);
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.countdown-box td span {
+    color: white;
+    font-size: 22px;
+    font-family: "Bank Gothic";
+    font-weight: 100;
+}
+
+.diff-style-r td {
+    padding: 0;
+    color: white;
+    background: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.second-r {
+    font-family: "Agency FB";
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.third-r td h3 {
+    margin: 0;
+    padding: 0;
+    font-family: "Bank Gothic";
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    letter-spacing: 10px;
+    
+}
+
+
+
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+#footer {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 3em;
+    background: #2e2e2e;
+    text-align: center;
+}
+
+#footer h2 {
+    padding: 10px 0em 1em 0em;
+}
+
+.footer-row {
+    margin-top: 2rem;
+}
+		
+	#footer .fbox1,
+	#footer .fbox2,
+    #footer .fbox3 {
+        vertical-align: top;
+		display: inline-block;
+		width: 33%;
+	}
+
+.big {
+    font-size: 60px;
+}
+
+  
+	
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+        float: left;
+        width: 100%;
+		overflow: hidden;
+		padding: 5em 0em;
+		border-top: 20px solid rgba(255,255,255,0.08);
+        background: rgb(119, 119, 119);
+		text-align: center;
+	}
+	
+	#copyright p
+	{
+		letter-spacing: 1px;
+		font-size: 0.90em;
+		color: rgba(255,255,255,0.6);
+	}
+	
+	#copyright a
+	{
+		text-decoration: none;
+		color: rgba(255,255,255,0.8);
+	}
+
+/*********************************************************************************/
+/* iaial                                                                    */
+/*********************************************************************************/
+
+.social {
+    left: 50%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.social-tab {
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.social-tab a, .social-tab span {
+    color: white;
+}
+
+.icon-tw {
+    background-color: rgb(32, 141, 239);
+}
+
+
+.icon-fb {
+    background-color: rgb(58, 81, 142);
+}
+
+
+.icon-li {
+    background-color: rgb(39, 81, 135);
+}
+
+
+/*********************************************************************************/
+/* Newsletter                                                                    */
+/*********************************************************************************/
+
+	#newsletter
+	{
+		overflow: hidden;
+		padding: 8em 0em;
+		background: #EDEDED;
+		text-align: center;
+	}
+	
+	#newsletter .title h2
+	{
+		color: rgba(0,0,0,0.8);
+	}
+	
+	#newsletter .content
+	{
+		width: 600px;
+		margin: 0px auto;
+	}
+	
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	#portfolio
+	{
+		overflow: hidden;
+		padding-top: 5em;
+		border-top: 1px solid rgba(0,0,0,0.2);
+	}
+	
+	#portfolio .box
+	{
+		text-align: center;
+		color: rgba(0,0,0,0.5);
+	}
+	
+	#portfolio h3
+	{
+		display: block;
+		padding-bottom: 1em;
+		font-size: 1em;
+		color: rgba(0,0,0,0.6);
+	}
+
+	#portfolio .title
+	{
+		text-align: center;
+	}
+
+	#portfolio .title h2
+	{
+		color: rgba(0,0,0,0.8);
+	}
+
+	.column1,
+	.column2,
+	.column3,
+	.column4
+	{
+		width: 282px;
+	}
+	
+	.column1,
+	.column2,
+	.column3
+	{
+		float: left;
+		margin-right: 24px;
+	}
+	
+	.column4
+	{
+		float: right;
+	}
+
+/*********************************************************************************/
+/* Three Columns                                                                 */
+/*********************************************************************************/
+
+
+
+/*********************************************************************************/
+/* About Info Columns                                                                 */
+/*********************************************************************************/
+
+.about {
+    margin-top: 2rem;
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
+    background-color: rgb(150, 27, 25);
+}
+
+.ths-about {
+    margin-top: 2rem;
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
+    font-size: 1.25em;
+    background-color: rgb(150, 27, 25);
+}
+
+.about-container {
+    vertical-align: top;
+    width: 30%;
+    line-height: 1.2;
+    display: inline-block;
+}
+
+.bottom-container {
+    vertical-align: top;
+    width: 33%;
+    line-height: 1.2;
+    display: inline-block;
+}
+ 
+
+.ns {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+	
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
+
+
+
+/*********************************************************************************/
+/* Responsive Layout                                                                 */
+/*********************************************************************************/
+
+/* ----------- iPhone ----------- */
+
+@media screen and (max-width: 667px)  {
+    
+    html,body {
+        background-color: rgb(178, 27, 25);
+        color: white;
+    }
+    
+    .wrapper {
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    
+    #bios {
+        text-align: center;
+        padding: 10px;
+
+    }
+    
+    .speaker {
+        margin-bottom: 20px;
+    }
+
+    .speaker #text {
+        text-align: center;
+        padding: 10px;
+        display: block;
+        top: auto;
+        transform: none;
+        margin: 0 auto;
+    }
+    
+    
+    .speaker #text p {
+        font-size: 15px;
+    }
+
+.speaker img {
+
+    width: 250px;
+    height: auto;
+}
+    .sponsors img {
+        width: 70%;
+    }
+    
+    .sponsors #text p {
+        font-size: 15px;
+    }
+    
+    #partners h2 {
+        font-size: 20px;
+
+    }
+
+    #partners h1 {
+        font-size: 40px;
+    }
+    
+    
+    
+    /* -------- Images -------- */
+    .image-text-container {
+        width: 80%;
+    }
+    iframe {
+        height: 200px;
+    }
+    
+    /* -------- Header -------- */
+    
+    header {
+        overflow: scroll;
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: rgb(244, 244, 244);
+        -webkit-transition: height 1s;
+           -moz-transition: height 1s;
+            -ms-transition: height 1s;
+             -o-transition: height 1s;
+                transition: height 1s;
+        
+      }
+    
+    #logo-main {
+        width: 0;
+        height: 0;
+    }
+    
+    #header-wrapper #logo-main-small {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 40px;
+        padding: 0.5rem 0.5rem;
+    }
+    
+    nav#tabs {
+        top: auto;
+        left: auto;
+        right: auto;
+        float: none; 
+        visibility: hidden;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        text-align: center;
+        padding: 4em 2rem 0rem 2rem;
+        vertical-align: middle;
+        -webkit-transition: height 2s ease-in;
+           -moz-transition: height 2s ease-in;
+            -ms-transition: height 2s ease-in;
+             -o-transition: height 2s ease-in;
+                transition: height 2s ease-in;
+    }
+
+    header nav#tabs a, header.smaller nav#tabs a{
+        float: none;
+        color: dimgrey;
+        font-size: 20px;
+        padding: 0;
+        width: auto;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        font-family: "Bank Gothic";
+        text-align: center;
+        vertical-align: middle;
+        -webkit-transition: all 0.3s;
+           -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+             -o-transition: all 0.3s;
+                transition: all 0.3s;
+
+    }
+    
+    div#tabs-menu {
+        z-index: 11;
+        visibility: visible;
+        width: auto;
+        height: auto;
+        color: dimgrey;
+        top: 17px;
+        right: 10px;
+        position: fixed;
+        
+    }
+    
+    div#tabs-menu div#cross {
+        visibility: hidden;
+    }
+
+    
+    
+    #logo {
+        padding: 0;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    
+    
+    header.smaller {
+        background-color: rgb(244, 244, 244);
+        position: fixed;
+        z-index: 10;
+        border-bottom: none;
+    } 
+
+    header.smaller nav#tabs {
+        position: relative;
+        line-height: 50px;
+        vertical-align: middle;
+    }
+    header.smaller nav#tabs a{
+        position: relative;
+        color: dimgrey;
+        background-color: none;
+        border-radius: none;
+    }
+    
+    
+    
+    
+    /* -------- Sidebar -------- */
+    
+    #sidebar {
+        top: auto;
+        right: auto;
+        position: relative;
+        float: none;
+        width: 100%;
+        padding-top: 0px;
+    }
+    
+    #sidebar-content {
+        padding: 15px;
+    }
+
+    #nostyle-text {
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    #sidebar-content-box {
+        background-color: none;
+        color: rgb(80, 80, 80);
+        text-align: center;
+    }
+
+    #sidebar-content-box h3 {
+        color: darkslategray;
+        text-align: center;
+
+    }
+    
+    /* -------- Social & About -------- */
+    .social {
+        top: 80px;
+        z-index: 9;
+    }
+    
+    .about-container {
+        width: 100%;
+        display: block;
+    }
+    
+    
+    /* -------- Footer -------- */
+    
+    	#footer
+	{
+		overflow: hidden;
+		padding-bottom: 2rem;
+		background: #2e2e2e;
+		text-align: center;
+	}
+
+#footer h2 {
+    padding: 10px 0em 0.5rem 0em;
+}
+
+		
+	#footer .fbox1,
+	#footer .fbox2,
+	#footer .fbox3
+	{
+        padding: 10px 0px;
+		display: list-item;
+		width: 100%;
+        float: none;
+	}
+    
+    .fbox1 div, .fbox2 div, .fbox3 div {
+        font-size: 30px;
+    }
+    
+    #footer span {
+        padding-bottom: 5px;
+    }
+
+    
+    
+}
+
+
+
+
+/* ----------- iPad ----------- */
+
+@media screen and (max-width: 1024px) {
+    html,body {
+        background-color: rgb(178, 27, 25);
+        color: white;
+    }
+    
+    .wrapper {
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    
+    #teaser {
+        text-align: center;
+        
+    }
+    
+    /* -------- Header -------- */
+    
+    header {
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: rgb(244, 244, 244);
+        -webkit-transition: height 1s;
+           -moz-transition: height 1s;
+            -ms-transition: height 1s;
+             -o-transition: height 1s;
+                transition: height 1s;
+        
+      }
+    #logo-main {
+        width: 0;
+        height: 0;
+    }
+    
+    #header-wrapper #logo-main-small {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 40px;
+        padding: 0.5rem 0.5rem;
+    }
+    
+    nav#tabs {
+        top: auto;
+        left: auto;
+        right: auto;
+        float: none; 
+        visibility: hidden;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        text-align: center;
+        padding: 4em 2rem 0rem 2rem;
+        vertical-align: middle;
+        -webkit-transition: height 2s ease-in;
+           -moz-transition: height 2s ease-in;
+            -ms-transition: height 2s ease-in;
+             -o-transition: height 2s ease-in;
+                transition: height 2s ease-in;
+    }
+
+    header nav#tabs a, header.smaller nav#tabs a{
+        float: none;
+        color: dimgrey;
+        font-size: 20px;
+        padding: 0;
+        width: auto;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        font-family: "Bank Gothic";
+        text-align: center;
+        vertical-align: middle;
+        -webkit-transition: all 0.3s;
+           -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+             -o-transition: all 0.3s;
+                transition: all 0.3s;
+
+    }
+    
+    div#tabs-menu {
+        z-index: 11;
+        visibility: visible;
+        width: auto;
+        height: auto;
+        color: dimgrey;
+        top: 17px;
+        right: 10px;
+        position: fixed;
+        
+    }
+    
+    div#tabs-menu div#cross {
+        visibility: hidden;
+    }
+
+    
+    
+    #logo {
+        padding: 0;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    
+    
+    header.smaller {
+        background-color: rgb(244, 244, 244);
+        position: fixed;
+        z-index: 10;
+        border-bottom: none;
+    } 
+
+    header.smaller nav#tabs {
+        position: relative;
+        line-height: 50px;
+        vertical-align: middle;
+    }
+    header.smaller nav#tabs a{
+        position: relative;
+        color: dimgrey;
+        background-color: none;
+        border-radius: none;
+    }
+    
+    
+    
+    
+    /* -------- Sidebar -------- */
+    
+    #sidebar {
+        top: auto;
+        right: auto;
+        position: relative;
+        float: none;
+        width: 100%;
+        padding-top: 0px;
+    }
+    
+    #sidebar-content {
+        padding: 15px;
+    }
+
+    #nostyle-text {
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    #sidebar-content-box {
+        background-color: none;
+        color: rgb(80, 80, 80);
+        text-align: center;
+    }
+
+    #sidebar-content-box h3 {
+        color: darkslategray;
+        text-align: center;
+
+    }
+    
+    /* -------- Social & About -------- */
+    .social {
+        top: 80px;
+        z-index: 9;
+    }
+    
+    
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+      
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+      
+}
